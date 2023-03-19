@@ -1,0 +1,83 @@
+/*========================
+    Slider
+    =========================*/
+    .slider_item {
+        width: 65vw;
+        height: 70vh;
+        position: relative;
+        box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+        transform: scale(0.7);
+        opacity: 0.5;
+        transition: all 0.7s;
+       overflow-y: hidden;
+    }
+
+    .owl-item.active.center .slider_item {
+        transform: scale(0.99);
+        opacity: 1;
+        border-radius: 10px;
+        overflow-x: hidden;
+    }
+
+    .text-slider3{
+        color: #fff;
+        position: absolute;
+        top: 40%;
+        font-size: 75px;
+        left: 10%;
+    }
+
+    /* Owl Carousel */
+    .owl-prev {
+        position: absolute;
+        left: 20%;
+        top: 45%;
+        transform: translateY(-50%);
+        font-size: 60px !important;
+        /* color: #fff !important; */
+      
+      
+    }
+
+    .owl-next {
+        position: absolute;
+        right: 20%;
+        top: 45%;
+        transform: translateY(-50%);
+        font-size: 60px !important;
+        /* color: #fff !important; */
+      
+
+    }
+    .owl-prev,.owl-next:hover {
+        background: none !important;
+    }
+
+    .owl-dots {
+        position: absolute;
+        display: flex;
+        bottom: 3%;
+        right: 42%;
+        transform: translateY(-50%);
+    }
+
+    .owl-dot span{
+        width: 12px !important;
+        height: 12px!important;
+        margin: 0px !important;
+        background-color: transparent!important;
+    }
+    .owl-dot {
+        width: 15px;
+        height: 15px;
+        border: 1px solid #fff !important;
+        border-radius: 50%;
+        display:flex !important;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 5px;
+    }
+
+    .owl-dot.active span{
+        background-color: #5583e0e3 !important;
+    }

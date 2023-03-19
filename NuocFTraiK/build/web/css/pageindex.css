@@ -1,0 +1,72 @@
+/*thiết lập style cho màu sắc, vị trí, độ cao... cho pagination*/
+.pageindex {
+   
+    width: 400px;
+    height:45px;
+    line-height: 45px;
+    background-image: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%)!important;
+    border-radius: 25px;
+    border-style:solid;
+    border-width:1px;
+    position: absolute;
+    left: 38%;
+    margin: 25px 0px;
+    z-index: 1;
+}
+/* Thiết lập style cho thẻ ul
+*/ .pageindex ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 10px 20px 0 #cccccc;
+}/*
+thiết lập style cho thẻ li
+*/
+.pageindex ul a {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+    color: #fff;
+}
+.pageindex ul a:active{
+   color: #333 !important;
+}
+
+/*chuyển đổi vị trí của class bar khi người dùng hover vào các con số*/
+
+.pageindex ul a:hover:nth-of-type(2) ~ .bar {
+    left: 25%;
+}
+.pageindex ul a:hover:nth-of-type(3) ~ .bar {
+    left: 50%;
+}
+.pageindex ul a:hover:nth-of-type(4) ~ .bar {
+    left: 75%;
+}
+.pageindex ul a:hover:nth-of-type(5) ~ .bar {
+    left: 100%;
+}
+/*
+thiết lập style cho class bar
+*/
+/*.pageindex ul .bar {
+    width: 25%;
+    background-color: #fff;
+    border-radius: 25px;
+    border-style:solid;
+    border-width:1px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+}*/
+.pageindex ul{
+     border-radius: 25px;
+}
